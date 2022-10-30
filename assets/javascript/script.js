@@ -1,5 +1,5 @@
 /*GET BUTTON BY ID*/
-button = document.querySelector('#btn');
+const button = document.querySelector('#btn');
 
 /*ARROW FUNCTION FIRED WHEN THE BUTTON IS CLICKED*/
 button.addEventListener('click', () => {
@@ -9,4 +9,6 @@ button.addEventListener('click', () => {
     'rgb(' + Math.round(Math.random() * 255) +
     ',' + Math.round(Math.random() * 255) +
     ',' + Math.round(Math.random() * 255) + ')';
+
+    document.querySelector('#value').innerHTML = `Congratulations! your background color is:<br>${document.body.style.backgroundColor}`;
 })

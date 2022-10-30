@@ -6,6 +6,9 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 1.5px #000;
 }
 
 /*BODY*/
@@ -23,12 +26,12 @@ div{
     flex-direction: column;
 }
 div h1{
-    text-align: center;
-    color: #fff;
     font-weight: 600;
     font-size: 45px;
 }
 div button{
+    color: #000;
+    text-shadow: 1px 1px 1px transparent;
     font-size: 20px;
     position: relative;
     margin: 15px auto;
@@ -39,4 +42,13 @@ div button{
     letter-spacing: 1.5px;
     cursor: pointer;
     outline: none;
+}
+div h3{
+    margin-top: 5px;
+}
+/*MOBILE VERSION*/
+@media (max-width: 600px){
+    body{
+        transform: scale(85%);
+    }
 }
